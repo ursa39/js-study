@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intersection Observer</title>
+  <style>
+    .observer-target {
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px dotted antiquewhite;
+      transition: background 0.8s, color 0.8s;
+    }
+    .redden {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Intersection Observer</h1>
+  <div class="contaner">
+    <div class="observer-target">observer-target 001</div>
+    <div class="observer-target">observer-target 002</div>
+    <div class="observer-target">observer-target 003</div>
+    <div class="observer-target">observer-target 004</div>
+    <div class="observer-target">observer-target 005</div>
+    <div id="target" class="observer-target">observer-target 006</div>
+    <div class="observer-target">observer-target 007</div>
+    <div class="observer-target">observer-target 008</div>
+    <div class="observer-target">observer-target 009</div>
+    <div class="observer-target">observer-target 010</div>
+  </div>
+  
+  <script src="/dist/intersection-observer.js"></script>
+</body>
+</html>
